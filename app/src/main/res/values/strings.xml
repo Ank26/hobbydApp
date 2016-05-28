@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Hobbyd</string>
+    <string name="Painting">Painting</string>
+    <string name="Travelling">Travelling</string>
+    <string name="Cooking">Cooking</string>
+    <string name="Photography">Photography</string>
+    <string name="Music">Music</string>
+    <string name="Tech">Tech</string>
+
+    <string name="action_settings">Settings</string>
+
+</resources>
