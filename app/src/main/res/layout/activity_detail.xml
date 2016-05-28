@@ -1,24 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/green"
+    android:orientation="vertical"
     tools:context=".DetailActivity">
-
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
         <TextView
-            android:id="@+id/detail_text_view"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:text=""
-            android:textColor="#ffffff"
+            android:id="@+id/title_textview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
             android:textAlignment="center"
-            android:background="@drawable/green"
-            />
-    </ScrollView>
+            android:textAllCaps="true"
+            style="@style/textStyle"
+            android:textSize="24sp"/>
+        <ListView
+            android:id="@+id/quotes_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="#000000"
+            android:dividerHeight="2dp"    >
+        </ListView>
 
 
-</RelativeLayout>
+</LinearLayout>
