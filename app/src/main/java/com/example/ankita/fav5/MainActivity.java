@@ -3,7 +3,9 @@ package com.example.ankita.fav5;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
+import android.widget.CheckBox;
 import android.widget.TextView;
 
 import java.util.HashMap;
@@ -11,11 +13,33 @@ import java.util.HashMap;
 public class MainActivity extends AppCompatActivity {
 
     static  HashMap<String, String[]> hobbyDetailsMap = new HashMap<>();
+    boolean isListView =false;
+    CheckBox listViewCheckBox;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         loadHobbyDetailsMap();
+
+        listViewCheckBox = (CheckBox) findViewById(R.id.listview_checkbox);
+        isListView = listViewCheckBox.isChecked();
+
+        listViewCheckBox.setOnClickListener( new View.OnClickListener(){
+
+            public void onClick(View v) {
+                isListView = true;
+                if(isListView){
+                    // doStuff
+                    Intent intentMain = new Intent(MainActivity.this ,
+                            MainListActivity.class);
+                    MainActivity.this.startActivity(intentMain);
+                    isListView = false;
+                    Log.i("Content "," Main List layout ");
+                }
+
+
+            }
+        });
        }
 
     public void openDetail(View view){

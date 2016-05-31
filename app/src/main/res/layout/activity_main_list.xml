@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context="com.example.ankita.fav5.MainListActivity">
+    <CheckBox
+        android:id="@+id/listview_checkbox"
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:text="List View"
+        android:checked="true"
+        android:layout_marginLeft="120dp"/>
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <TextView
+        android:id="@+id/music_textView_list"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/music"
+        android:text="@string/Music"
+        android:textAlignment="center"
+        style="@style/textStyle"
+        android:onClick="openDetail"
+
+        />
+
+    <TextView
+        android:id="@+id/photog_textView_list"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/photog"
+        android:text="@string/Photography"
+        android:textAlignment="center"
+        style="@style/textStyle"
+        android:onClick="openDetail"
+        />
+
+    <TextView
+        android:id="@+id/paint_textView"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/paint1"
+        android:onClick="openDetail"
+        android:text="@string/Painting"
+        android:textAlignment="center"
+        style="@style/textStyle"
+
+
+        />
+
+    <TextView
+        android:id="@+id/tech_textView"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/it"
+        android:text="@string/Tech"
+        android:textAlignment="center"
+        style="@style/textStyle"
+        android:elegantTextHeight="true"
+        android:onClick="openDetail"
+
+        />
+
+
+
+
+
+    <TextView
+        android:id="@+id/travel_textView"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/travelling"
+        android:onClick="openDetail"
+        android:text="@string/Travelling"
+        android:textAlignment="center"
+        style="@style/textStyle"
+        />
+
+    <TextView
+        android:id="@+id/cooking_textView"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/cook"
+        android:text="@string/Cooking"
+        android:textAlignment="center"
+        style="@style/textStyle"
+        android:onClick="openDetail"
+        />
+
+    </LinearLayout>
+</ScrollView>
+</LinearLayout>
